@@ -20,7 +20,7 @@ export default function AddItemButton() {
 
     return (
         <div>
-            <form>
+            <form className="form-shape">
                 <h1>Add Item</h1>
                 <label>Item</label>
                 <input 
