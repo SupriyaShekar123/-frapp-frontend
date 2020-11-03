@@ -1,15 +1,6 @@
-.form-size{
-    margin-top: 3em;
-    margin-bottom: 3em;
-    
+div{
+    height: 100%;
 }
-
-.form-detail{
-    height: 5em;
-    width: 50%;
-    
-}
-
 .myButton {
 	box-shadow:inset 0px -3px 7px 0px #29bbff;
 	background:linear-gradient(to bottom, #2dabf9 5%, #0688fa 100%);
@@ -23,7 +14,8 @@
 	font-size:15px;
 	padding:9px 23px;
 	text-decoration:none;
-	text-shadow:0px 1px 0px #263666;
+    text-shadow:0px 1px 0px #263666;
+    margin-top: 2;
 }
 .myButton:hover {
 	background:linear-gradient(to bottom, #0688fa 5%, #2dabf9 100%);
@@ -32,4 +24,28 @@
 .myButton:active {
 	position:relative;
 	top:1px;
+}
+
+form {
+    width: 80%;
+    margin: 0 auto;
+  }
+
+label,input {
+    display: inline-block;   
+}
+  
+label {
+    width: 30%;
+    height: 3em;
+    text-align: right; 
+}
+  
+label+input {
+    width: 30%;
+    margin: 0 30% 0 4%;
+}
+  
+input+input {
+    float: right;
 }

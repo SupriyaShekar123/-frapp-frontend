@@ -1,53 +1,54 @@
-import React from 'react'
-import Form from "react-bootstrap/Form";
-import Container from "react-bootstrap/Container";
-import Button from "react-bootstrap/Button";
+import React, { useState} from 'react'
 import './AddItemButton.css'
 
+
+
 export default function AddItemButton() {
+
+    const [item, setItem] = useState("");
+    const [quantity, setQuantity] = useState("");
+    const [date, setDate] = useState("")
+
+    const submitForm = (event) =>{
+        event.preventDefault()
+        console.log(`
+        ${item}
+        ${quantity}
+        ${date}
+        `);
+    }
+
     return (
         <div>
-            <h1>Add Item</h1>
-            <Container>
-                <Form.Group className='form-size'> 
-                    <Form.Label>Item </Form.Label>
-                    <Form.Control
-                    className="form-detail"
-                    value=""
-                    onchange=""
-                    type="text"
-                    placeholder=""
-                    required
-                    />
-                </Form.Group >
-                <Form.Group className='form-size'>
-                    <Form.Label>Quantity </Form.Label>
-                    <Form.Control
-                    className="form-detail"
-                    value=""
-                    onchange=""
-                    type="text"
-                    placeholder=""
-                    required
-                    />
-                </Form.Group>
-                <Form.Group className='form-size'>
-                    <Form.Label>Expiration date </Form.Label>
-                    <Form.Control
-                    className="form-detail"
-                    value=""
-                    onchange=""
-                    type="date"
-                    placeholder=""
-                    required
-                    />
-                </Form.Group>
-                <Form.Group >
-                    <Button className="myButton">
-                    Submit
-                    </Button>
-                </Form.Group>
-            </Container>
+            <form>
+                <h1>Add Item</h1>
+                <label>Item</label>
+                <input 
+                type="text"
+                value={item}
+                onChange={(event) => setItem(event.target.value)}
+                ></input>
+
+                <label>Quantity</label>
+                <input 
+                type="text"
+                value={quantity}
+                onChange={(event) => setQuantity(event.target.value)}
+                ></input>
+
+                <label>Expiration date</label>
+                <input 
+                type="date"
+                value={date}
+                onChange={(event => setDate(event.target.value))}
+                ></input>
+
+                <button 
+                className="myButton" 
+                type="subm"
+                onClick={submitForm}
+                >Submit</button>
+            </form>
         </div>
     )
 }
