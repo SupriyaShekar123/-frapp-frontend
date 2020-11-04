@@ -27,6 +27,7 @@ function App() {
 
           <Route exact path="/AddItemButton" component={AddItemButton}/>
         </Switch>
+        <footer className="footer"> All right reserved.</footer>
         {/* <DetailsFridge/> */}
         {/* <DetailsPantry/> */}
       </div>
