@@ -1,17 +1,15 @@
-import React from 'react'
+import React from "react";
 
 export default function ListDetails(props) {
+  const { name, quantity, expirationDate, used } = props;
 
-    const{item,quantity,expiryDate,choose,remove}=props
-
-    return (
-        <tr>
-            <td>{item}</td>
-            <td>{quantity}</td>
-            <td>{expiryDate}</td>
-            <td>{choose}</td>
-            <td>{remove}</td>
-        </tr>    
-    )
-    
+  return (
+    <tr>
+      <td>{name}</td>
+      <td>{quantity}</td>
+      <td>{new Date(expirationDate).toLocaleDateString("en-GB")}</td>
+      <td>{used}</td>
+      <td>remove</td>
+    </tr>
+  );
 }
