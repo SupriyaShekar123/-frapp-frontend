@@ -7,23 +7,25 @@
     padding: 1em;
 }
 
-.board td, .board th {
+
+.board td,
+.board th {
     border: 1px solid #ddd;
     padding: 8px;
-  }
+}
 
-.board tr:nth-child(even){background-color: #f2f2f2;}
+.board tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
 
-.board tr:hover {background-color: #ddd;}
+.board tr:hover {
+    background-color: #ddd;
+}
 
-.Headline{
+.Headline {
     font-size: 20px;
     margin-bottom: 2em;
 }
-
-/* table{
-    border-spacing: 1em;
-} */
 
 .board th {
     padding-top: 12px;
@@ -31,5 +33,7 @@
     text-align: center;
     background-color: #423286;
     color: white;
-  }
-
+}
+.dropdown {
+    font-size: 20px;
+}

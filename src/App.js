@@ -7,9 +7,8 @@ import Login from "./pages/Login/Login"
 import Signup from "./pages/Signup/Signup"
 import MyWaste from "./pages/MyWaste/MyWaste"
 import WhatDoIHave from "./pages/WhatDoIHave/WhatDoIHave"
+import DetailsFridge from "./pages/DetailsPage/DetailsFridge"
 import AddItemButton from "./component/AddItemButton"
-
-
 
 function App() {
   return (
@@ -22,9 +21,10 @@ function App() {
           <Route exact path="/MyWaste" component={MyWaste}/>
           <Route exact path="/login" component={Login}/>
           <Route exact path="/signup" component={Signup}/>
-          <Route exact path="" />
+          <Route exact path="/detailsfridge" component={DetailsFridge}/>
           <Route exact path="/AddItemButton" component={AddItemButton}/>
         </Switch>
+        <DetailsFridge/>
       </div>
     </Router>
     
