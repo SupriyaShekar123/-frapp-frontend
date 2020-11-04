@@ -1,57 +1,80 @@
 import React from 'react'
-import "../MyWaste/MyWaste.css"
-import "../../component/AddItemButton.css"
+import "../../pages/MyWaste/MyWaste.css"
+
+import ListDetails from '../../component/ListDetails'
 
 export default function DetailsFridge() {
+
+   let dummyData =[
+        {
+            id:1,
+            item:"milk",
+            quantity:"2",
+            choose: "Used",
+            expiryDate:'2020-07-03',
+            remove:"X"
+        },
+        {
+            id:2,
+            item:"yoghurt",
+            quantity:"2",
+            choose: "Used",
+            expiryDate: '2020-07-03',
+            remove:"X"
+        },
+        {
+            id:3,
+            item:"butter",
+            quantity:"6",
+            choose: "Expired",
+            expiryDate: '2020-05-03',
+            remove:"X"
+        },
+        {
+            id:4,
+            item:"orange juice",
+            quantity:"1",
+            choose: "Not Used",
+            expiryDate: '2020-11-03',
+            remove:"X"
+        },
+        {
+            id:5,
+            item:"cheese",
+            quantity:"2",
+            choose: "Used",
+            expiryDate: '2020-02-03',
+            remove:"X"
+        },
+    ]
+    
+    const itemToRender = () => dummyData.map((food) =>
+        
+        <ListDetails   key={food.id} {...food}/>
+    )
+    
     return (
         <div>
-            <div>
-            <h1>Details of Item in fridge</h1>
-            <button className="myButton">Add</button>
-            </div>
-            <div>
+            <h1>Details of Items in Fridge</h1>
+            <div >
                 <table className="board">
                     <tr className="Headline">
-    <th>Item</th>
-    <th>Quantities</th>
-    <th>Expriy Date</th>
-    <th>
-        <select className="dropdown">
-        <option>Choose</option>
-        <option>Used</option>
-        <option>Not Used</option>
-        <option>Wasted/Thrown away</option></select></th>
-  </tr>
-  <tr>
-    <td>Milk</td>
-    <td>2</td>
-    <td>11-11-2020</td>
-    <td>Used</td>
-    
-  </tr>
-   <tr>
-    <td>Milk</td>
-    <td>2</td>
-    <td>11-11-2020</td>
-    <td>Used</td>
-    
-  </tr>
-   <tr>
-    <td>Juice</td>
-    <td>1</td>
-    <td>01-11-2020</td>
-    <td>Wasted</td>
-    
-  </tr>
-   <tr>
-    <td>Cheese</td>
-    <td>4</td>
-    <td>17-11-2020</td>
-    <td>Not Used</td>
-    
-  </tr>
+                        <th> Item </th>
+                        <th> Quantity </th>
+                        <th>Expiry date</th>
+                        <th> <select>
+                          <option>Choose</option>
+                          <option>Used</option>
+                          <option>Not used</option>
+                          <option>Expired</option>
+                          </select></th>
+                          <th>Remove</th>
+                    </tr>                 
+                    {itemToRender()}       
                 </table>
             </div>
         </div>
     )
 }
+
+
