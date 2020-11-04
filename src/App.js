@@ -6,6 +6,7 @@ import Homepage from "./pages/Homepage/Homepage"
 import Login from "./pages/Login/Login"
 import MyWaste from "./pages/MyWaste/MyWaste"
 import WhatDoIHave from "./pages/WhatDoIHave/WhatDoIHave"
+import AddItemButton from "./component/AddItemButton"
 
 
 
@@ -19,7 +20,7 @@ function App() {
           <Route exact path="/WhatDoIHave" component={WhatDoIHave} />
           <Route exact path="/MyWaste" component={MyWaste}/>
           <Route exact path="/login" component={Login}/>
-          <Route exact path="" />
+          <Route exact path="/AddItemButton" component={AddItemButton}/>
         </Switch>
       </div>
     </Router>
