@@ -8,6 +8,7 @@ export default function AddItemButton() {
     const [item, setItem] = useState("");
     const [quantity, setQuantity] = useState("");
     const [date, setDate] = useState("")
+    const [location, setLocation] = useState(" ")
 
     const submitForm = (event) =>{
         event.preventDefault()
@@ -15,6 +16,7 @@ export default function AddItemButton() {
         ${item}
         ${quantity}
         ${date}
+        ${location}
         `);
     }
 
@@ -36,6 +38,13 @@ export default function AddItemButton() {
                 onChange={(event) => setQuantity(event.target.value)}
                 ></input>
 
+                <label>Location</label>
+                <select onChange={(event => setLocation(event.target.value))} value={location}>
+                    <option value="" defaultValue>select a location</option>
+                    <option value="Fridge">Fridge</option>
+                    <option value="Pantry">Pantry</option>
+                </select>
+        
                 <label>Expiration date</label>
                 <input 
                 type="date"

@@ -33,7 +33,7 @@ div{
 }
 form {
     
-    width: 70%;
+    width: 60%;
     margin: 0 auto;
     border: solid 3px lightblue;
     border-radius: 20px;
@@ -49,7 +49,7 @@ label {
     text-align: right; 
 }
   
-label+input {
+label+input, label+select {
     width: 30%;
     margin: 0 30% 0 4%;
 }
