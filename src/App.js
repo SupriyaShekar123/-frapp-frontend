@@ -28,7 +28,10 @@ function App() {
           <Route exact path="/AddItemButton" component={AddItemButton}/>
         </Switch>
         {/* <DetailsFridge/> */}
+<<<<<<< HEAD
         {/* <DetailsPantry/> */}
+=======
+>>>>>>> setup for items reducer, with action to fetch items from the server
       </div>
     </Router>
     
