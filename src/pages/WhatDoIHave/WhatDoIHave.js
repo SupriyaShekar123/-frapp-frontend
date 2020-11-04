@@ -65,9 +65,9 @@ setCardFlipped(!isCardFlipped)
           
         </div>
         
-      </ReactCardFlip>
-      </div>
-      <div>
+        </ReactCardFlip>
+        </div>
+        <div>
           <ReactCardFlip isFlipped={isCardFlipped} flipDirection="horizontal" cardZIndex={6}>
         <div >
          
@@ -88,12 +88,12 @@ setCardFlipped(!isCardFlipped)
                   <li>Tomatoes</li>
                     <li>Cheese</li>
                     <li>Yogurt</li>
-                     <li>Beer</li>
-                       <li>Coco-cola</li>
-                       <li>Cake</li>
-                        <li>Paprika</li>
-                          <li>Carrot</li>
-                          <li>Ice-Cream</li>
+                    <li>Beer</li>
+                    <li>Coco-cola</li>
+                    <li>Cake</li>
+                    <li>Paprika</li>
+                    <li>Carrot</li>
+                    <li>Ice-Cream</li>
                 </ol>
                  <button className="seemore_button">See more</button>
                  <div className="spacing">
