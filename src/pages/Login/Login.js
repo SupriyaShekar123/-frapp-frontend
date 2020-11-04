@@ -4,6 +4,7 @@ import { login } from "../../store/user/actions";
 import { selectToken } from "../../store/user/selectors";
 import { useDispatch, useSelector } from "react-redux";
 import { useHistory, Link } from "react-router-dom";
+import { fetchItems } from "../../store/items/actions";
 
 export default function Login() {
   const [email, setEmail] = useState("");
@@ -15,6 +16,7 @@ export default function Login() {
   useEffect(() => {
     if (token !== null) {
       history.push("/WhatDoIHave");
+      dispatch(fetchItems())
     }
   }, [token, history]);
 
