@@ -8,7 +8,6 @@
     "@testing-library/user-event": "^12.1.10",
     "axios": "^0.21.0",
     "react": "^17.0.1",
-    "react-card-flip": "^1.0.11",
     "react-bootstrap": "^1.4.0",
     "react-dom": "^17.0.1",
     "react-password-mask": "^3.3.1",
