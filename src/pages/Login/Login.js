@@ -13,14 +13,12 @@ export default function Login() {
   const history = useHistory();
 
   useEffect(() => {
-    console.log(token);
     if (token !== null) {
       history.push("/WhatDoIHave");
     }
   }, [token, history]);
 
   function submitForm(event) {
-    console.log("hi");
     event.preventDefault();
 
     dispatch(login(email, password));
