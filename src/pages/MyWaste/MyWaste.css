@@ -1,4 +1,4 @@
-.board {
+.board{
     align-items: center;
     margin: auto;
     width: 60%;
@@ -6,6 +6,7 @@
     border-radius: 15px;
     padding: 1em;
 }
+
 
 .board td,
 .board th {
@@ -26,11 +27,6 @@
     margin-bottom: 2em;
 }
 
-
-/* table{
-    border-spacing: 1em;
-} */
-
 .board th {
     padding-top: 12px;
     padding-bottom: 12px;
@@ -38,7 +34,6 @@
     background-color: #423286;
     color: white;
 }
-
 .dropdown {
     font-size: 20px;
 }
