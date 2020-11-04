@@ -1,21 +1,22 @@
 import React from 'react'
-import "./DetailsFridge.css"
+import "../MyWaste/MyWaste.css"
+import "../../component/AddItemButton.css"
 
 export default function DetailsFridge() {
     return (
         <div>
             <div>
             <h1>Details of Item in fridge</h1>
-            <button>Add</button>
+            <button className="myButton">Add</button>
             </div>
             <div>
-                <table>
-                    <tr>
+                <table className="board">
+                    <tr className="Headline">
     <th>Item</th>
     <th>Quantities</th>
     <th>Expriy Date</th>
     <th>
-        <select>
+        <select className="dropdown">
         <option>Choose</option>
         <option>Used</option>
         <option>Not Used</option>
