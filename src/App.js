@@ -9,6 +9,7 @@ import MyWaste from "./pages/MyWaste/MyWaste"
 import WhatDoIHave from "./pages/WhatDoIHave/WhatDoIHave"
 import DetailsFridge from "./pages/DetailsPage/DetailsFridge"
 import AddItemButton from "./component/AddItemButton"
+import DetailsPantry from './pages/DetailsPage/DetailsPantry';
 
 function App() {
   return (
@@ -21,10 +22,13 @@ function App() {
           <Route exact path="/MyWaste" component={MyWaste}/>
           <Route exact path="/login" component={Login}/>
           <Route exact path="/signup" component={Signup}/>
-          <Route exact path="/detailsfridge" component={DetailsFridge}/>
+          <Route exact path="/Itemsinfridge" component={DetailsFridge}/>
+          <Route exact path="/Itemsinspantry" component={DetailsPantry}/>
+
           <Route exact path="/AddItemButton" component={AddItemButton}/>
         </Switch>
-        <DetailsFridge/>
+        {/* <DetailsFridge/> */}
+        {/* <DetailsPantry/> */}
       </div>
     </Router>
     

@@ -1,4 +1,5 @@
 import React,{useState} from 'react'
+import {Link} from "react-router-dom";
 import ReactCardFlip from 'react-card-flip';
 
 import "./WhatDoIHave.css"
@@ -57,7 +58,9 @@ setCardFlipped(!isCardFlipped)
                           <li>Carrot</li>
                           <li>Ice-Cream</li>
                 </ol>
+                <Link to='/Itemsinfridge'>
                  <button className="seemore_button">See more</button>
+                 </Link>
                  <div className="spacing">
                  <button className="seemore_button" onClick={open}>Check out</button>
                  </div>
@@ -95,7 +98,9 @@ setCardFlipped(!isCardFlipped)
                     <li>Carrot</li>
                     <li>Ice-Cream</li>
                 </ol>
+                <Link to='Itemsinspantry'>
                  <button className="seemore_button">See more</button>
+                 </Link>
                  <div className="spacing">
                  <button className="seemore_button" onClick={close}>Check out</button>
                  </div>
