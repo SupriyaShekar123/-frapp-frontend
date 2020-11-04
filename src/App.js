@@ -17,7 +17,6 @@ function App() {
       <div className="App">
         <Navbar />
         <Switch>
-          <Route exact path="/homepage" component={Homepage} />
           <Route exact path="/WhatDoIHave" component={WhatDoIHave} />
           <Route exact path="/MyWaste" component={MyWaste} />
           <Route exact path="/login" component={Login} />
@@ -25,6 +24,7 @@ function App() {
           <Route exact path="/Itemsinfridge" component={DetailsFridge} />
           <Route exact path="/Itemsinspantry" component={DetailsPantry} />
           <Route exact path="/AddItemButton" component={AddItemButton} />
+          <Route exact path="/" component={Homepage} />
         </Switch>
         {/* <DetailsFridge/> */}
         {/* <DetailsPantry/> */}

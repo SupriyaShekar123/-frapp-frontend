@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from "react";
-import PasswordMask from "react-password-mask";
 import { login } from "../../store/user/actions";
 import { selectToken } from "../../store/user/selectors";
 import { useDispatch, useSelector } from "react-redux";
@@ -16,7 +15,7 @@ export default function Login() {
   useEffect(() => {
     if (token !== null) {
       history.push("/WhatDoIHave");
-      dispatch(fetchItems())
+      dispatch(fetchItems());
     }
   }, [token, history]);
 
@@ -31,34 +30,33 @@ export default function Login() {
 
   return (
     <div>
+      <form className="form-shape">
         <h1>Log In</h1>
-        <form>
-            <div>
-                <label controlId="formBasicEmail">Email address
-                    <textarea
-                        value={email}
-                        onChange={event => setEmail(event.target.value)}
-                        type="email"
-                        placeholder="Enter email"
-                        required
-                    />
-                 </label>    
-            </div>
+        <label>Email address</label>
+        <input
+          value={email}
+          onChange={(event) => setEmail(event.target.value)}
+          type="email"
+          placeholder="Enter email"
+          required
+        />
+        <label controlId="formBasicPassword">Password</label>
+        <input
+          type="password"
+          value={password}
+          onChange={(event) => setPassword(event.target.value)}
+          type="password"
+          placeholder="Enter password"
+          required
+        />
 
-            <div>
-                <label controlId="formBasicPassword">Password
-                    <PasswordMask
-                        value={password}
-                        onChange={event => setPassword(event.target.value)}
-                        type="password"
-                        placeholder="Enter password"
-                        required
-                    />
-                </label>
-            </div>
-
-            <input type="submit" value="Log In" onClick={submitForm}/>
-        </form>
+        <input
+          type="submit"
+          value="Log In"
+          className="myButton"
+          onClick={submitForm}
+        />
+      </form>
     </div>
   );
 }
