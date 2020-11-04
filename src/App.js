@@ -6,6 +6,7 @@ import Homepage from "./pages/Homepage/Homepage"
 import Login from "./pages/Login/Login"
 import MyWaste from "./pages/MyWaste/MyWaste"
 import WhatDoIHave from "./pages/WhatDoIHave/WhatDoIHave"
+import DetailsFridge from "./pages/DetailsPage/DetailsFridge"
 
 
 
@@ -20,7 +21,9 @@ function App() {
           <Route exact path="/MyWaste" component={MyWaste}/>
           <Route exact path="/login" component={Login}/>
           <Route exact path="" />
+          <Route exact path="/detailsfridge" component={DetailsFridge}/>
         </Switch>
+        <DetailsFridge/>
       </div>
     </Router>
     
