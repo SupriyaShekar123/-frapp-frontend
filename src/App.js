@@ -4,6 +4,7 @@ import React from 'react';
 import Navbar from "./component/Navbar"
 import Homepage from "./pages/Homepage/Homepage"
 import Login from "./pages/Login/Login"
+import Signup from "./pages/Signup/Signup"
 import MyWaste from "./pages/MyWaste/MyWaste"
 import WhatDoIHave from "./pages/WhatDoIHave/WhatDoIHave"
 
@@ -19,6 +20,7 @@ function App() {
           <Route exact path="/WhatDoIHave" component={WhatDoIHave} />
           <Route exact path="/MyWaste" component={MyWaste}/>
           <Route exact path="/login" component={Login}/>
+          <Route exact path="/signup" component={Signup}/>
           <Route exact path="" />
         </Switch>
       </div>
