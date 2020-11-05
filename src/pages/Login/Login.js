@@ -49,13 +49,12 @@ export default function Login() {
           placeholder="Enter password"
           required
         />
-
-        <input
-          type="submit"
-          value="Log In"
-          className="myButton"
-          onClick={submitForm}
-        />
+        <Link className="myButton" to="/signup">
+          Signup
+        </Link>{" "}
+        <button type="submit" className="myButton" onClick={submitForm}>
+          Login
+        </button>
       </form>
     </div>
   );
