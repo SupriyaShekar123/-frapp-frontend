@@ -23,6 +23,12 @@ export default function MyWaste() {
   itemWaste.map((food) => <ItemTable key={food.id} {...food} />);
 
 
+    function back(e){
+     e.preventDefault()
+     history.push("/WhatDoIHave")
+
+    }
+
   return (
     <div>
       <h1>My Waste</h1>
@@ -38,6 +44,7 @@ export default function MyWaste() {
           <tbody>{itemToRender()}</tbody>
         </table>
       </div>
+      <button className="myButton" onClick={back}>Back</button>
     </div>
   );
 }

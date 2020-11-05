@@ -34,7 +34,7 @@ export default function Homepage() {
             <Animated animationIn="bounceInRight"  animationInDuration={4000} animationOutDuration={4000} animationInDelay={9000} isVisible={true}>
             <h3>Then you are at the right place</h3>
             </Animated>
-            <Animated animationIn="bounceInUp"  animationInDuration={4000} animationOutDuration={4000} animationInDelay={11000} isVisible={true}>
+            <Animated animationIn="bounceInUp"  animationInDuration={4000} animationOutDuration={4000} animationInDelay={12000} isVisible={true}>
             <h3>Check out our new app <span className="link">here</span></h3>
             </Animated>
                 </div>
@@ -55,26 +55,26 @@ export default function Homepage() {
                     <div className="container_main">
                     <div className="img_div">
                    
-                    <img src="https://www.css3transition.com/wp-content/uploads/2017/08/switch-between-login-and-signup-form.gif" alt="signup/login"></img>
+                    <img src="https://www.css3transition.com/wp-content/uploads/2017/08/switch-between-login-and-signup-form.gif" alt="signup/login" className="Home_img"></img>
                      
                       <p><b>1.SignUP</b></p>
                     <p>Register directly to this app</p>
                     </div>
                      <div className="img_div">
                      
-            <img src="https://i.pinimg.com/originals/44/bc/6b/44bc6b850c656382be67a1de3f91964d.gif"/>
+            <img src="https://i.pinimg.com/originals/44/bc/6b/44bc6b850c656382be67a1de3f91964d.gif" className="Home_img"/>
              <p><b>2.Add items</b></p>
                     <p>Add items available in fridge and panrty to app</p>
              </div>
              <div className="img_div">
              
-        <img src="https://social-innovation.hitachi/-/media/project/hitachi/sib/en-eu/stories/technology/millennials-wasting-away/fridge5b45d.gif?la=en-150&upd=20200410020344Z&hash=C352702C1852F0B3D7AE3F53EDAD939B"/>  
+        <img src="https://social-innovation.hitachi/-/media/project/hitachi/sib/en-eu/stories/technology/millennials-wasting-away/fridge5b45d.gif?la=en-150&upd=20200410020344Z&hash=C352702C1852F0B3D7AE3F53EDAD939B" className="Home_img"/>  
              <p><b>3.Track</b></p>
             <p>Keep track of all the items available in fridge and pantry.</p>
              </div>   
              <div className="img_div">
              
-        <img src="https://ordinarygreengirl.files.wordpress.com/2018/11/food-waste-gif.gif?w=372"/>  
+        <img src="https://ordinarygreengirl.files.wordpress.com/2018/11/food-waste-gif.gif?w=372" className="Home_img"/>  
             <p><b>4.Waste</b></p>
             <p>Get the list of all the wasted items and shop wisely.</p>
              </div> 

@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import {useHistory} from "react-router-dom"
 import { useDispatch } from "react-redux";
 import { postItem } from "../store/items/actions";
 
@@ -8,6 +9,8 @@ export default function AddItemButton() {
   const [date, setDate] = useState("");
   const [location, setLocation] = useState(" ");
   const dispatch = useDispatch();
+
+  const history = useHistory();
 
   const submitForm = (event) => {
     event.preventDefault();
@@ -21,6 +24,7 @@ export default function AddItemButton() {
     };
 
     dispatch(postItem(item));
+    history.push("/WhatDoIHave")
   };
 
   return (
