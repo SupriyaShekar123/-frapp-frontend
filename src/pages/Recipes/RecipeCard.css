@@ -1,0 +1,29 @@
+.img-div {
+  height: 80px;
+  margin: auto;
+}
+
+img {
+  height: 100%;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  color: whitesmoke;
+  width: 160px;
+  margin: 1em;
+  height: 250px;
+  font-family: "Antic Didone", "system-ui", "Segoe UI", "Roboto", "Helvetica",
+    "Arial", sans-serif;
+  border-radius: 5px;
+  background-color: rgba(0, 0, 0, 0.4);
+  font-weight: bold;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+.card > a {
+  margin-top: auto;
+  font-weight: normal;
+  margin-bottom: 0;
+}
