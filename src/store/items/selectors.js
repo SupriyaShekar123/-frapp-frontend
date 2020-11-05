@@ -12,3 +12,6 @@ export const selectPantryItems = (state) =>
   state.items.filter(
     (item) => item.location === "pantry" && item.used !== true
   );
+
+export const selectWastedItems = (state) =>
+  state.items.filter((item) => item.wasted === true);

@@ -26,21 +26,20 @@ export const updateSucces = (payload) => {
   };
 };
 
-export const updateItem = (id, wastedOrEaten) => async (dispatch, getState) => {
+export const updateItem = (id, wasted) => async (dispatch, getState) => {
   const token = selectToken(getState());
   const userId = selectId(getState());
-  console.log("token:", token, "id:", id);
 
   if (token === null || id === null || userId === null) return;
   try {
     const res = await axios.patch(
       `${apiUrl}/items/${userId}`,
-      { id, wastedOrEaten },
+      { id, wasted },
       {
         headers: { Authorization: `Bearer ${token}` },
       }
     );
-    console.log(res.data);
+
     dispatch(updateSucces(res.data));
   } catch (error) {
     console.log(error.message);

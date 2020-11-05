@@ -1,15 +1,14 @@
-import React from 'react'
-import "./MyWaste.css"
+import React from "react";
+import "./MyWaste.css";
 
 export default function ItemTable(props) {
+  const { name, quantity, location } = props;
 
-    const{item,quantity,location}=props
-
-    return (
-        <tr>
-            <td>{item}</td>
-            <td>{quantity}</td>
-            <td>{location}</td>
-        </tr>    
-    )
+  return (
+    <tr>
+      <td>{name}</td>
+      <td>{quantity}</td>
+      <td>{location}</td>
+    </tr>
+  );
 }
