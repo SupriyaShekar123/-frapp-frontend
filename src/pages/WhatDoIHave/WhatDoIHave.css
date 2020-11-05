@@ -84,3 +84,13 @@ li {
     text-align: center;
     margin-top: 5px;
 }
+
+@media screen and (max-width:768px){
+    img{
+        width: 10em;
+        height: 17em;
+    }
+    .seemore_button{
+        width: 10em;
+    }
+}
