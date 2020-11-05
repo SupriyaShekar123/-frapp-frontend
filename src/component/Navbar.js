@@ -11,7 +11,7 @@ export default function Navbar() {
 
   return (
     <nav>
-      <ul>
+      <ul className="contain borderXwidth">
         {!token ? (
           <>
             <NavLink to="/" className="button">
