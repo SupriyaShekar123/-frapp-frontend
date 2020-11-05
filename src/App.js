@@ -26,8 +26,6 @@ function App() {
           <Route exact path="/AddItemButton" component={AddItemButton} />
           <Route exact path="/" component={Homepage} />
         </Switch>
-        {/* <DetailsFridge/> */}
-        {/* <DetailsPantry/> */}
       </div>
     </Router>
   );

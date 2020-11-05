@@ -19,7 +19,7 @@ export default function MyWaste() {
             <tr className="Headline">
               <th> Item </th>
               <th> quantity </th>
-              <th> Fridge or Pastry ?</th>
+              <th> Fridge or Pantry ?</th>
             </tr>
           </thead>
           <tbody>{itemToRender()}</tbody>

@@ -15,16 +15,12 @@ export default function WhatDoIHave() {
   const pantry = useSelector(selectPantryItems);
 
   function open(e) {
-    // (e.target.style.display === "block")? setfridge("none") && setFridgeItems("block"):setfridge("block")
     e.preventDefault();
     setFlipped(!isFlipped);
-    console.log("I am here");
   }
   function close(e) {
-    // (e.target.style.display === "block")? setfridge("none") && setFridgeItems("block"):setfridge("block")
     e.preventDefault();
     setCardFlipped(!isCardFlipped);
-    console.log("I am here now");
   }
 
   return (

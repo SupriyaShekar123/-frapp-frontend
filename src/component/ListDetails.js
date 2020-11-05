@@ -15,7 +15,6 @@ export default function ListDetails(props) {
         <button
           className="myButton"
           onClick={() => {
-            console.log(id);
             dispatch(updateItem(id, true));
           }}
         >
