@@ -1,12 +1,14 @@
 import React from "react";
 import { useSelector } from "react-redux";
 import { selectItems } from "../../store/items/selectors";
+import {useHistory} from "react-router-dom"
 import ItemTable from "./ItemTable";
 import "./MyWaste.css";
 
 export default function MyWaste() {
 
   const data = useSelector(selectItems);
+  const history= useHistory()
 
   // Filter the item
 
