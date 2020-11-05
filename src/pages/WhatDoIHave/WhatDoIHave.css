@@ -84,3 +84,26 @@ li {
     text-align: center;
     margin-top: 5px;
 }
+
+@media screen and (max-width:768px){
+    img{
+        width: 10em;
+        height: 17em;
+    }
+    .seemore_button{
+        width: 10em;
+    }
+    h3{
+        font-size: 1em;
+    }
+    .first_slide{
+        padding: 0;
+    }
+    h4{
+        font-size: 1.2em;
+    }
+    h2{
+        font-size:1.3em;
+    }
+    
+}

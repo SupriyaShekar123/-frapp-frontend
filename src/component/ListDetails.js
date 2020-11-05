@@ -13,7 +13,7 @@ export default function ListDetails(props) {
       <td>{new Date(expirationDate).toLocaleDateString("en-GB")}</td>
       <td>
         <button
-          className="myButton"
+          className="myButton detail-button"
           onClick={() => {
             dispatch(updateItem(id, true));
           }}
@@ -21,7 +21,7 @@ export default function ListDetails(props) {
           Expired
         </button>{" "}
         <button
-          className="myButton"
+          className="myButton detail-button"
           onClick={() => dispatch(updateItem(id, false))}
         >
           Eaten
