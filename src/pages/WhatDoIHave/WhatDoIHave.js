@@ -41,7 +41,7 @@ export default function WhatDoIHave() {
                 width="350px"
                 height="400px"
               />
-              <div className="center">
+              <div className="center_all">
                 <button className="seemore_button" onClick={open}>
                   Check out
                 </button>
