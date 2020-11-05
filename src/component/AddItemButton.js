@@ -50,8 +50,8 @@ export default function AddItemButton() {
           <option value="" defaultValue>
             select a location
           </option>
-          <option value="Fridge">Fridge</option>
-          <option value="Pantry">Pantry</option>
+          <option value="fridge">Fridge</option>
+          <option value="pantry">Pantry</option>
         </select>
 
         <label>Expiration date</label>
