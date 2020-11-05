@@ -1,31 +1,33 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css");
+
 .Home_img {
-    height: 300px;
-    width: 300px;
+  height: 300px;
+  width: 300px;
 }
 
 .container_main {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    /* padding: 100px; */
-    justify-content: space-around;
-    justify-items: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  /* padding: 100px; */
+  justify-content: space-around;
+  justify-items: center;
 }
 
 .img_div {
-    height: 600px;
-    width: 300px;
-    /* border: 1px solid lightcoral; */
+  height: 600px;
+  width: 300px;
+  /* border: 1px solid lightcoral; */
 }
 
 .first_slide {
-    padding: 150px;
+  padding: 150px;
 }
 
 .link {
-    text-decoration: underline;
-    color: lightcoral;
+  text-decoration: underline;
+  color: lightcoral;
 }
 
 .link:hover {
-    cursor: pointer;
+  cursor: pointer;
 }
