@@ -23,13 +23,6 @@ export default function SignUp() {
   function submitForm(event) {
     event.preventDefault();
 
-    console.log("new user details:", {
-      firstName,
-      lastName,
-      email,
-      password
-    })
-
     dispatch(signUp(firstName, lastName, email, password));
 
     setFirstName("");
@@ -40,60 +33,48 @@ export default function SignUp() {
 
   return (
     <div>
-        <h1>SIGN UP</h1>
-        <form>
-            <div>
-                <label controlId="formBasicEmail">First Name
-                    <textarea
-                    value={firstName}
-                    onChange={event => setFirstName(event.target.value)}
-                    type="text"
-                    placeholder="Enter first name"
-                    required
-                    />
-                </label>
-            </div>
-          
-            <div>
-                <label controlId="formBasicLastName">Last Name
-                    <textarea
-                    value={lastName}
-                    onChange={event => setLastName(event.target.value)}
-                    type="text"
-                    placeholder="Enter last name"
-                    required
-                    />
-                </label>
-            </div>
+      <form className="form-shape">
+        <h1>Sign up</h1>
+        <label>First Name</label>
+        <input
+          value={firstName}
+          onChange={(event) => setFirstName(event.target.value)}
+          type="text"
+          placeholder="Enter first name"
+          required
+        />
 
-            <div>
-                <label controlId="formBasicEmail">Email address
-                    <textarea
-                    value={email}
-                    onChange={event => setEmail(event.target.value)}
-                    type="email"
-                    placeholder="Enter email"
-                    required
-                    />
-                </label>
-            </div>
+        <label>Last Name</label>
+        <input
+          value={lastName}
+          onChange={(event) => setLastName(event.target.value)}
+          type="text"
+          placeholder="Enter last name"
+          required
+        />
 
-            <div>
-                <label controlId="formBasicPassword">Password
-                    <PasswordMask
-                    value={password}
-                    onChange={event => setPassword(event.target.value)}
-                    type="password"
-                    placeholder="Enter password"
-                    required
-                    />
-                </label>
-            </div>
-            
-            <input type="submit" value="Log In" onClick={submitForm}/>
-        </form>
+        <label>Email address</label>
+        <input
+          value={email}
+          onChange={(event) => setEmail(event.target.value)}
+          type="email"
+          placeholder="Enter email"
+          required
+        />
+
+        <label>Password</label>
+        <input
+          value={password}
+          onChange={(event) => setPassword(event.target.value)}
+          type="password"
+          placeholder="Enter password"
+          required
+        />
+
+        <button className="myButton" type="submit" onClick={submitForm}>
+          Signup
+        </button>
+      </form>
     </div>
   );
 }
-
-    
