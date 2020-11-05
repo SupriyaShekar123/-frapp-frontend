@@ -123,3 +123,9 @@ label+input, label+select {
 input+input {
     float: right;
 }
+
+@media screen and(max-width:768px){
+ .first_slide{
+   font-size: 0.3em;
+ }
+}

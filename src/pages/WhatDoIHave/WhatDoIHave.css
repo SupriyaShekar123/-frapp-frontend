@@ -93,4 +93,10 @@ li {
     .seemore_button{
         width: 10em;
     }
+    h3{
+        font-size: 1em;
+    }
+    .first_slide{
+        padding: 0;
+    }
 }
