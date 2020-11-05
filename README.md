@@ -1,6 +1,6 @@
 ### Frapp ![alt text][logo.png]
 
-:exclamation: Click [HERE](https://distracted-gates-8839f7.netlify.app/) to check out the deployed version :exclamation:
+:exclamation: Click [HERE](https://frapp2020.netlify.app/) to check out the deployed version :exclamation:
 
 ## INTRO
 
