@@ -1,0 +1,86 @@
+@import url("https://fonts.googleapis.com/css?family=Antic+Didone%7CNunito+Sans:400,700&amp;display=swap");
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    /* padding: 100px; */
+    justify-content: space-evenly;
+    justify-items: center;
+}
+
+.main_div {
+    border: 1px solid black
+}
+
+
+/* body {
+    background-image: url("https://d3h2k7ug3o5pb3.cloudfront.net/image/2020-01-10/0e02d030-337f-11ea-a700-a5080a3a032a.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+} */
+
+h1,
+h2 {
+    text-transform: capitalize;
+    font-size: 1.8rem;
+    line-height: 2.25rem;
+    /* margin-bottom: 1rem; */
+    font-family: "Antic Didone", "system-ui", "Segoe UI", "Roboto", "Helvetica", "Arial", sans-serif;
+    opacity: 0.8;
+}
+
+h3 {
+    text-transform: capitalize;
+    font-size: 1.5rem;
+    line-height: 1.5rem;
+    font-family: "Antic Didone", "system-ui", "Segoe UI", "Roboto", "Helvetica", "Arial", sans-serif;
+    opacity: 0.6;
+}
+
+h4 {
+    text-transform: capitalize;
+    font-size: 1.47rem;
+    line-height: 1.25rem;
+    font-family: "Antic Didone", "system-ui", "Segoe UI", "Roboto", "Helvetica", "Arial", sans-serif;
+    opacity: 0.6;
+}
+
+p {
+    text-transform: capitalize;
+    font-size: 1.2rem;
+    line-height: 1.25rem;
+    /* margin-bottom: 1.5rem; */
+    font-family: "Antic Didone", "system-ui", "Segoe UI", "Roboto", "Helvetica", "Arial", sans-serif;
+    opacity: 0.9;
+}
+
+li {
+    text-transform: capitalize;
+    font-size: 1.2rem;
+    line-height: 1rem;
+    margin-bottom: 1rem;
+    font-family: "Antic Didone", "system-ui", "Segoe UI", "Roboto", "Helvetica", "Arial", sans-serif;
+    opacity: 0.9;
+}
+
+.seemore_button {
+    font-size: 1rem;
+    font-family: "Antic Didone", "system-ui", "Segoe UI", "Roboto", "Helvetica", "Arial", sans-serif;
+    border: none;
+    background-color: whitesmoke;
+    padding: 10px;
+    width: 200px;
+    align-items: center;
+}
+
+.center {
+    text-align: center;
+}
+
+.spacing {
+    margin-top: 10px;
+}
+
+.center_all {
+    text-align: center;
+    margin-top: 5px;
+}

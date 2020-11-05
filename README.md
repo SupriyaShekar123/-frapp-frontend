@@ -1,70 +1,94 @@
-# Getting Started with Create React App
+### Frapp ![alt text][logo.png]
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+:exclamation: Click [HERE](https://distracted-gates-8839f7.netlify.app/) to check out the deployed version :exclamation:
 
-## Available Scripts
+## INTRO
 
-In the project directory, you can run:
+### 👩‍💻👨‍💻 Who are we?👨‍💻👩‍💻
 
-### `npm start`
+We’re four full stack developers from the [Codaisseur](https://codaisseur.com/hire-developers/) Academy, coming from four different countries who teamed up to contribute to the  Codisseur Hackaton project by implementing new features. 
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+**Reinko Brink** - [_github_](https://github.com/Kruxk), [_linkedin_](https://www.linkedin.com/in/reinko-brink/)
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+**Supriya Shekar** - [_github_](https://github.com/SupriyaShekar123), [_linkedin_](https://www.linkedin.com/in/supriya-shekar88/)
 
-### `npm test`
+**Thomas Heddadji** - [_github_](https://github.com/Tomtom-dev), [_linkedin_](https://www.linkedin.com/in/thomas-heddadji/)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+**Tom Vos** - [_github_](https://github.com/tmcv), [_linkedin_](https://www.linkedin.com/in/tomvos1992/)
 
-### `npm run build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### What this app about?
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+ This app is about helping people reduce food waste.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### What this app does?
 
-### `npm run eject`
+This app helps people to manage there food items by keeping track of all food items available in fridge and pantry and helps in reducing food waste.
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+### App Demo
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+![Frapp1_Homepage](https://github.com/SupriyaShekar123/-frapp-frontend/blob/master/src/Images/Frapp_Homepage_Giphy)
+![Frapp2_WhatDoIHave](https://github.com/SupriyaShekar123/-frapp-frontend/blob/master/src/Images/Frapp_WhatDoIHave.giphy)
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+## Goals for this project
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+The goals of this project was to build a full stack app  new technologies (see above) in a 72 hour Codaisseur Hackathon, by working in teams of 4 people to create an app/tool/website....
 
-## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Technology used in building this site
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+:eyes::point_down: **Click links to see samples in this project** :point_down::eyes:
 
-### Code Splitting
+- [React](https://github.com/SupriyaShekar123/-frapp-frontend/blob/development/src/component/ListDetails.js)
+- [Redux](https://github.com/SupriyaShekar123/-frapp-frontend/blob/development/src/store/index.js)
+- [Express](https://github.com/Kruxk/frapp-backend/blob/development/index.js)
+- [RESTAPI](https://github.com/Kruxk/frapp-backend/blob/development/routers/user.js)
+- [Sequelize](https://github.com/Kruxk/frapp-backend/blob/development/migrations/20201103101419-create-user.js)
+- [react-card-flip](https://github.com/SupriyaShekar123/-frapp-frontend/blob/development/src/pages/WhatDoIHave/WhatDoIHave.js):star:
+- [react-animated-css](https://github.com/SupriyaShekar123/-frapp-frontend/blob/development/src/pages/WhatDoIHave/WhatDoIHave.js) :star:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+:star: _New technology learned during this project_
 
-### Analyzing the Bundle Size
+### User Stories:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+As a User I want to be able to navigate to different pages so I can find the information I am looking for.
 
-### Making a Progressive Web App
+As a User I should be able to login to use app.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+As a new user I want to be able to Sign Up.
 
-### Advanced Configuration
+As a user I should be able to add my items.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+As a user I want to see what food items are there in my fridge/pantry. 
 
-### Deployment
+As a user I should be able to delete the used or expired items from the list.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+As a user I would see like to see some recipes for items that expires soon.
 
-### `npm run build` fails to minify
+As a user I should be able see the wasted items.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+As a user I would like to manage my items in food and panrty.
+### `Link to Wire frame`
+
+https://wireframepro.mockflow.com/view/M162b179c507749c32574af89f1f4753b1592222587592#/page/15645272d0914f26a9b5c60208178ba6
+
+### `Link to Project Task Board`
+
+https://github.com/SupriyaShekar123/-frapp-frontend/projects/1
+
+### `Link to data Module`
+
+https://github.com/Kruxk/frapp-backend/blob/development/Frappy.pdf
+
+## Git workflow
+
+In this project I try to use:
+
+- Good commit messages
+- Well named branches
+- Pull requests with summaries
+- Code reviews
+
+## Server-repo
+
+The server side of this project is an Express server connected to a Sequelize database. [Click here for more details](https://github.com/Kruxk/frapp-backend)
