@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import { useDispatch } from "react-redux";
 import { postItem } from "../store/items/actions";
-import "./AddItemButton.css";
 
 export default function AddItemButton() {
   const [name, setName] = useState("");
