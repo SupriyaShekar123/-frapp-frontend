@@ -1,9 +1,7 @@
 import { LOG_OUT, LOGIN_SUCCESS, TOKEN_STILL_VALID } from "./actions";
 
 const initialState = {
-  token: null,
-  name: null,
-  email: null,
+  token: localStorage.getItem("token")
 };
 
 const reducer = (state = initialState, action) => {

@@ -10,6 +10,7 @@ import WhatDoIHave from "./pages/WhatDoIHave/WhatDoIHave";
 import DetailsFridge from "./pages/DetailsPage/DetailsFridge";
 import AddItemButton from "./component/AddItemButton";
 import DetailsPantry from "./pages/DetailsPage/DetailsPantry";
+import RecipesPage from "./pages/Recipes/RecipesPage";
 
 function App() {
   return (
@@ -24,8 +25,10 @@ function App() {
           <Route exact path="/Itemsinfridge" component={DetailsFridge} />
           <Route exact path="/Itemsinspantry" component={DetailsPantry} />
           <Route exact path="/AddItemButton" component={AddItemButton} />
+          <Route exact path="/RecipeSuggestions" component={RecipesPage} />
           <Route exact path="/" component={Homepage} />
         </Switch>
+        <hr />
         <footer className="footer"> All rights reserved.</footer>
       </div>
     </Router>
