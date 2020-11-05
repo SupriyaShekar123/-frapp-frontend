@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from "react";
-import PasswordMask from "react-password-mask";
 import { login } from "../../store/user/actions";
 import { selectToken } from "../../store/user/selectors";
 import { useDispatch, useSelector } from "react-redux";
 import { useHistory, Link } from "react-router-dom";
+import { fetchItems } from "../../store/items/actions";
 
 export default function Login() {
   const [email, setEmail] = useState("");
@@ -13,14 +13,13 @@ export default function Login() {
   const history = useHistory();
 
   useEffect(() => {
-    console.log(token);
     if (token !== null) {
       history.push("/WhatDoIHave");
+      dispatch(fetchItems());
     }
-  }, [token, history]);
+  }, [token, history, dispatch]);
 
   function submitForm(event) {
-    console.log("hi");
     event.preventDefault();
 
     dispatch(login(email, password));
@@ -31,34 +30,31 @@ export default function Login() {
 
   return (
     <div>
+      <form className="form-shape">
         <h1>Log In</h1>
-        <form>
-            <div>
-                <label controlId="formBasicEmail">Email address
-                    <textarea
-                        value={email}
-                        onChange={event => setEmail(event.target.value)}
-                        type="email"
-                        placeholder="Enter email"
-                        required
-                    />
-                 </label>    
-            </div>
-
-            <div>
-                <label controlId="formBasicPassword">Password
-                    <PasswordMask
-                        value={password}
-                        onChange={event => setPassword(event.target.value)}
-                        type="password"
-                        placeholder="Enter password"
-                        required
-                    />
-                </label>
-            </div>
-
-            <input type="submit" value="Log In" onClick={submitForm}/>
-        </form>
+        <label>Email address</label>
+        <input
+          value={email}
+          onChange={(event) => setEmail(event.target.value)}
+          type="email"
+          placeholder="Enter email"
+          required
+        />
+        <label>Password</label>
+        <input
+          type="password"
+          value={password}
+          onChange={(event) => setPassword(event.target.value)}
+          placeholder="Enter password"
+          required
+        />
+        <button type="submit" className="myButton" onClick={submitForm}>
+          Login
+        </button>{" "}
+        <Link className="myButton" to="/signup">
+          Signup
+        </Link>
+      </form>
     </div>
   );
 }
