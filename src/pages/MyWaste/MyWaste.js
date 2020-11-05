@@ -1,14 +1,27 @@
 import React from "react";
 import { useSelector } from "react-redux";
-import { selectWastedItems } from "../../store/items/selectors";
+import { selectItems } from "../../store/items/selectors";
 import ItemTable from "./ItemTable";
 import "./MyWaste.css";
 
 export default function MyWaste() {
-  const data = useSelector(selectWastedItems);
+
+  const data = useSelector(selectItems);
+
+  // Filter the item
+
+  const today=new Date().toISOString() 
+  
+  const itemWaste = data.filter(item =>{
+    if(item.expirationDate < today )
+    return item
+  })
+  
+  // if( data.expirationDate )
 
   const itemToRender = () =>
-    data.map((food) => <ItemTable key={food.id} {...food} />);
+  itemWaste.map((food) => <ItemTable key={food.id} {...food} />);
+
 
   return (
     <div>
