@@ -128,4 +128,8 @@ input+input {
  .first_slide{
    font-size: 0.3em;
  }
+ form {
+   width:80%;
+   margin: 0;
+ }
 }
