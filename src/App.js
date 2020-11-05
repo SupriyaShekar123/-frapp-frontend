@@ -26,9 +26,7 @@ function App() {
           <Route exact path="/AddItemButton" component={AddItemButton} />
           <Route exact path="/" component={Homepage} />
         </Switch>
-        <footer className="footer"> All right reserved.</footer>
-        {/* <DetailsFridge/> */}
-        {/* <DetailsPantry/> */}
+        <footer className="footer"> All rights reserved.</footer>
       </div>
     </Router>
   );

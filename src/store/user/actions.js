@@ -27,12 +27,6 @@ const tokenStillValid = (userWithoutToken) => ({
 export const logOut = () => ({ type: LOG_OUT });
 
 export const signUp = (firstName, lastName, email, password) => {
-  console.log("INSIDE SIGNUP FUNCTION", {
-    firstName,
-    lastName,
-    email,
-    password,
-  });
   return async (dispatch, getState) => {
     dispatch(appLoading());
     try {
@@ -43,7 +37,6 @@ export const signUp = (firstName, lastName, email, password) => {
         password,
       });
 
-      console.log("RESPONSE DATA", response.data);
       dispatch(loginSuccess(response.data));
       dispatch(showMessageWithTimeout("success", true, "account created"));
       dispatch(appDoneLoading());
@@ -61,18 +54,15 @@ export const signUp = (firstName, lastName, email, password) => {
 };
 
 export const login = (email, password) => {
-  console.log(email, password);
   return async (dispatch, getState) => {
     dispatch(appLoading());
     try {
       const loginLink = `${apiUrl}/user/login`;
-      console.log("connecting to:", loginLink);
       const response = await axios.post(loginLink, {
         email,
         password,
       });
 
-      console.log("Got here! RESPONSE DATA:", response.data);
       dispatch(loginSuccess(response.data));
       dispatch(showMessageWithTimeout("success", false, "welcome back!", 1500));
       dispatch(appDoneLoading());

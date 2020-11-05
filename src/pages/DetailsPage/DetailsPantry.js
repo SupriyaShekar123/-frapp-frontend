@@ -21,7 +21,7 @@ export default function DetailsPantry() {
               <th> Item </th>
               <th> Quantity </th>
               <th>Expiry date</th>
-              <th>Remove</th>
+              <th>Expired/Eaten</th>
             </tr>
           </thead>
           <tbody>{itemToRender()}</tbody>

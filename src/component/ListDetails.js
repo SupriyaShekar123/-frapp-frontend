@@ -1,15 +1,32 @@
 import React from "react";
+import { useDispatch } from "react-redux";
+import { updateItem } from "../store/items/actions";
 
 export default function ListDetails(props) {
-  const { name, quantity, expirationDate, used } = props;
+  const dispatch = useDispatch();
+  const { name, quantity, expirationDate, id } = props;
 
   return (
     <tr>
       <td>{name}</td>
       <td>{quantity}</td>
       <td>{new Date(expirationDate).toLocaleDateString("en-GB")}</td>
-      <td>{used}</td>
-      <td>remove</td>
+      <td>
+        <button
+          className="myButton"
+          onClick={() => {
+            dispatch(updateItem(id, true));
+          }}
+        >
+          Expired
+        </button>{" "}
+        <button
+          className="myButton"
+          onClick={() => dispatch(updateItem(id, false))}
+        >
+          Eaten
+        </button>
+      </td>
     </tr>
   );
 }

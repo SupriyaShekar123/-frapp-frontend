@@ -26,18 +26,21 @@ export const updateSucces = (payload) => {
   };
 };
 
-export const updateItem = (id, wastedOrEaten) => async (dispatch, getState) => {
+export const updateItem = (id, wasted) => async (dispatch, getState) => {
   const token = selectToken(getState());
   const userId = selectId(getState());
 
   if (token === null || id === null || userId === null) return;
   try {
-    const res = await axios.patch(`${apiUrl}/items/${userId}`, {
-      data: { wasted: wastedOrEaten, id },
-      headers: { Authorization: `Bearer ${token}` },
-    });
+    const res = await axios.patch(
+      `${apiUrl}/items/${userId}`,
+      { id, wasted },
+      {
+        headers: { Authorization: `Bearer ${token}` },
+      }
+    );
 
-    dispatch(updateItem(res.data));
+    dispatch(updateSucces(res.data));
   } catch (error) {
     console.log(error.message);
   }
@@ -45,10 +48,11 @@ export const updateItem = (id, wastedOrEaten) => async (dispatch, getState) => {
 
 export const postItem = (item) => async (dispatch, getState) => {
   const token = selectToken(getState());
+  const userId = selectId(getState());
+
   if (token === null) return;
   try {
-    const res = await axios.post(`${apiUrl}/items`, {
-      data: item,
+    const res = await axios.post(`${apiUrl}/items/${userId}`, item, {
       headers: { Authorization: `Bearer ${token}` },
     });
 
@@ -61,13 +65,13 @@ export const postItem = (item) => async (dispatch, getState) => {
 export const fetchItems = () => async (dispatch, getState) => {
   const token = selectToken(getState());
   const id = selectId(getState());
-  console.log(token, id);
+
   if (token === null) return;
   try {
     const res = await axios.get(`${apiUrl}/items/${id}`, {
       headers: { Authorization: `Bearer ${token}` },
     });
-    console.log(res);
+
     dispatch(fetchSucces(res.data));
   } catch (error) {
     console.log(error.message);
