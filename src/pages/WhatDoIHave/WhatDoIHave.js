@@ -60,7 +60,7 @@ export default function WhatDoIHave() {
               </Link>
               <div className="spacing">
                 <button className="seemore_button" onClick={open}>
-                  Check out
+                  Back
                 </button>
               </div>
             </div>
@@ -97,7 +97,7 @@ export default function WhatDoIHave() {
               </Link>
               <div className="spacing">
                 <button className="seemore_button" onClick={close}>
-                  Check out
+                  Back
                 </button>
               </div>
             </div>
