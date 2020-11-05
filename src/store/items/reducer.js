@@ -1,16 +1,18 @@
-import { FETCH_SUCCES, NEW_ITEM, UPDATE_ITEM } from "./actions"
+import { FETCH_SUCCES, NEW_ITEM, UPDATE_ITEM } from "./actions";
 
-const initialState = []
+const initialState = [];
 
-export default (state = initialState, { type, payload }) => {
-    switch (type) {
+const reducer = (state = initialState, { type, payload }) => {
+  switch (type) {
     case FETCH_SUCCES:
-        return [ ...payload ]
+      return [...payload];
     case NEW_ITEM:
-        return [ ...state, ...payload ]
+      return [...state, ...payload];
     case UPDATE_ITEM:
-        return [ ...state.filter(item => item.id !== payload.id), ...payload ]
+      return [...state.filter((item) => item.id !== payload.id), ...payload];
     default:
-        return state
-    }
-}
+      return state;
+  }
+};
+
+export default reducer;

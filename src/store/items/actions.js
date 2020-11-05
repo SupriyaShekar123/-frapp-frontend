@@ -1,7 +1,6 @@
 import axios from "axios";
 import { apiUrl } from "../../config/constants";
 import { selectId, selectToken } from "../user/selectors";
-import { selectItemById } from "./selectors";
 
 export const FETCH_SUCCES = "FETCH_SUCCES";
 export const NEW_ITEM = "NEW_ITEM";

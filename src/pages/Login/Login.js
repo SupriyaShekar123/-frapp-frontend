@@ -17,7 +17,7 @@ export default function Login() {
       history.push("/WhatDoIHave");
       dispatch(fetchItems());
     }
-  }, [token, history]);
+  }, [token, history, dispatch]);
 
   function submitForm(event) {
     event.preventDefault();
@@ -45,16 +45,15 @@ export default function Login() {
           type="password"
           value={password}
           onChange={(event) => setPassword(event.target.value)}
-          type="password"
           placeholder="Enter password"
           required
         />
-        <Link className="myButton" to="/signup">
-          Signup
-        </Link>{" "}
         <button type="submit" className="myButton" onClick={submitForm}>
           Login
-        </button>
+        </button>{" "}
+        <Link className="myButton" to="/signup">
+          Signup
+        </Link>
       </form>
     </div>
   );
