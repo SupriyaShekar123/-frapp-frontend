@@ -40,7 +40,7 @@ export default function WhatDoIHave() {
             <div key="front">
               <h2>What's in the fridge ?</h2>
               <img
-                src="https://images-na.ssl-images-amazon.com/images/I/71nqCR56Z3L._AC_SL1500_.jpg"
+                src="https://www.naturefresh.ca/wp-content/uploads/How-To-Organize-Your-Fridge-InsideFridge-terraskitchen-873x950.jpg"
                 alt="pantry"
                 width="350px"
                 height="400px"
