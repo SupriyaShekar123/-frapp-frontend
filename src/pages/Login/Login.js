@@ -40,7 +40,7 @@ export default function Login() {
           placeholder="Enter email"
           required
         />
-        <label controlId="formBasicPassword">Password</label>
+        <label>Password</label>
         <input
           type="password"
           value={password}
