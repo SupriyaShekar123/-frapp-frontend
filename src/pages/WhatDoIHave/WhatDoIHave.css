@@ -99,4 +99,7 @@ li {
     .first_slide{
         padding: 0;
     }
+    h4{
+        font-size: 1.2em;
+    }
 }
