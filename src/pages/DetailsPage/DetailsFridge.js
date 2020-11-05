@@ -16,22 +16,15 @@ export default function DetailsFridge() {
       <h1>Details of Items in Fridge</h1>
       <div>
         <table className="board">
-          <tr className="Headline">
-            <th> Item </th>
-            <th> Quantity </th>
-            <th>Expiry date</th>
-            <th>
-              {" "}
-              <select>
-                <option>Choose</option>
-                <option>Used</option>
-                <option>Not used</option>
-                <option>Expired</option>
-              </select>
-            </th>
-            <th>Remove</th>
-          </tr>
-          {itemToRender()}
+          <thead>
+            <tr className="Headline">
+              <th> Item </th>
+              <th> Quantity </th>
+              <th>Expiry date</th>
+              <th>Remove</th>
+            </tr>
+          </thead>
+          <tbody>{itemToRender()}</tbody>
         </table>
       </div>
     </div>
