@@ -30,8 +30,14 @@
     cursor: pointer;
 }
 
-@media screen and(max-width:768px){
+@media screen and (max-width:768px){
     h3{
       font-size: 0.5em;
+    }
+    .container_main {
+        grid-template-columns: none;
+    }
+    .img_div{
+        height:450px
     }
    }

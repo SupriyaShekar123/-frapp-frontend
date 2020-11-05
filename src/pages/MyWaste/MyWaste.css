@@ -39,8 +39,7 @@
 @media screen and (max-width:768px){
     .board{
         font-size: 1em;
-        width:90%;
-        
+        width:90%;      
     }
     nav ul{
         width:100%;
