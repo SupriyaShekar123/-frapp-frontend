@@ -13,7 +13,6 @@ import DetailsPantry from "./pages/DetailsPage/DetailsPantry";
 import RecipesPage from "./pages/Recipes/RecipesPage";
 
 function App() {
-  
   return (
     <Router>
       <div className="App">
@@ -26,9 +25,10 @@ function App() {
           <Route exact path="/Itemsinfridge" component={DetailsFridge} />
           <Route exact path="/Itemsinspantry" component={DetailsPantry} />
           <Route exact path="/AddItemButton" component={AddItemButton} />
-          <Route exact path="/RecipeSuggestions" component={RecipesPage}/>
+          <Route exact path="/RecipeSuggestions" component={RecipesPage} />
           <Route exact path="/" component={Homepage} />
         </Switch>
+        <hr />
         <footer className="footer"> All rights reserved.</footer>
       </div>
     </Router>

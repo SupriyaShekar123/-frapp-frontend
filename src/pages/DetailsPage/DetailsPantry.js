@@ -15,6 +15,12 @@ export default function DetailsPantry() {
   return (
     <div>
       <h1>Details of Items in Pantry</h1>
+      <Link to="/WhatDoIHave" className="myButton">
+        Back
+      </Link>{" "}
+      <Link to="/RecipeSuggestions" className="myButton">
+        Recipes
+      </Link>
       <div>
         <table className="board">
           <thead>
@@ -27,14 +33,6 @@ export default function DetailsPantry() {
           </thead>
           <tbody>{itemToRender()}</tbody>
         </table>
-      </div>
-      <div>
-        <Link to="/WhatDoIHave" className="myButton">
-          Back
-        </Link>
-        <Link to="/RecipeSuggestions" className="myButton">
-          Recipes
-        </Link>
       </div>
     </div>
   );
