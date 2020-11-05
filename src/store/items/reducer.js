@@ -9,7 +9,7 @@ const reducer = (state = initialState, { type, payload }) => {
     case NEW_ITEM:
       return [...state, ...payload];
     case UPDATE_ITEM:
-      return [...state.filter((item) => item.id !== payload.id), ...payload];
+      return [...state.filter((item) => item.id !== payload.id), payload];
     default:
       return state;
   }
