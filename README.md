@@ -6,7 +6,7 @@
 
 ### 👩‍💻👨‍💻 Who are we?👨‍💻👩‍💻
 
-We’re four full stack developers from the [Codaisseur](https://codaisseur.com/hire-developers/) Academy, coming from four different countries who teamed up to contribute to the  Codisseur Hackaton project by implementing new features. 
+We’re four full stack developers from the [Codaisseur](https://codaisseur.com/hire-developers/) Academy, coming from  different continents who teamed up to contribute to the  Codisseur Hackaton project by implementing new features. 
 
 **Reinko Brink** - [_github_](https://github.com/Kruxk), [_linkedin_](https://www.linkedin.com/in/reinko-brink/)
 
@@ -27,8 +27,8 @@ This app helps people to manage there food items by keeping track of all food it
 
 ### App Demo
 
-![Frapp1_Homepage](https://github.com/SupriyaShekar123/-frapp-frontend/blob/master/src/Images/Frapp_Homepage_Giphy)
-![Frapp2_WhatDoIHave](https://github.com/SupriyaShekar123/-frapp-frontend/blob/master/src/Images/Frapp_WhatDoIHave.giphy)
+![Frapp1_Homepage](https://github.com/SupriyaShekar123/-frapp-frontend/blob/development/src/Images/Frapp_Homepage_Giphy.gif)
+![Frapp2_WhatDoIHave](https://github.com/SupriyaShekar123/-frapp-frontend/blob/development/src/Images/Frapp_WhatDoIHave.gif)
 
 ## Goals for this project
 
@@ -70,7 +70,7 @@ As a user I should be able see the wasted items.
 As a user I would like to manage my items in food and panrty.
 ### `Link to Wire frame`
 
-https://wireframepro.mockflow.com/view/M162b179c507749c32574af89f1f4753b1592222587592#/page/15645272d0914f26a9b5c60208178ba6
+https://github.com/SupriyaShekar123/-frapp-frontend/blob/development/src/Frapp_1.pdf
 
 ### `Link to Project Task Board`
 
