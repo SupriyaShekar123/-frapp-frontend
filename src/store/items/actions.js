@@ -48,10 +48,11 @@ export const updateItem = (id, wasted) => async (dispatch, getState) => {
 
 export const postItem = (item) => async (dispatch, getState) => {
   const token = selectToken(getState());
+  const userId = selectId(getState());
+  console.log("testing:", item, token);
   if (token === null) return;
   try {
-    const res = await axios.post(`${apiUrl}/items`, {
-      data: item,
+    const res = await axios.post(`${apiUrl}/items/${userId}`, item, {
       headers: { Authorization: `Bearer ${token}` },
     });
 

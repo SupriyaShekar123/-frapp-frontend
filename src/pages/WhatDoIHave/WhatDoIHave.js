@@ -108,6 +108,9 @@ export default function WhatDoIHave() {
           </ReactCardFlip>
         </div>
       </div>
+      <Link to="/AddItemButton" className="myButton">
+        Add Items
+      </Link>
     </div>
   );
 }

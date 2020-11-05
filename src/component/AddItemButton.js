@@ -1,39 +1,46 @@
 import React, { useState } from "react";
+import { useDispatch } from "react-redux";
+import { postItem } from "../store/items/actions";
 import "./AddItemButton.css";
 
 export default function AddItemButton() {
-  const [item, setItem] = useState("");
+  const [name, setName] = useState("");
   const [quantity, setQuantity] = useState("");
   const [date, setDate] = useState("");
   const [location, setLocation] = useState(" ");
+  const dispatch = useDispatch();
 
   const submitForm = (event) => {
     event.preventDefault();
-    console.log(`
-        ${item}
-        ${quantity}
-        ${date}
-        ${location}
-        `);
+    const newDate = date.split("-").map((partial) => parseInt(partial));
+
+    const item = {
+      name,
+      quantity,
+      expirationDate: new Date(newDate[0], newDate[1] - 1, newDate[2]),
+      location,
+    };
+
+    dispatch(postItem(item));
   };
 
   return (
     <div>
       <form className="form-shape">
         <h1>Add Item</h1>
-        <label>Item</label>
+        <label>Name</label>
         <input
           type="text"
-          value={item}
-          onChange={(event) => setItem(event.target.value)}
-        ></input>
+          value={name}
+          onChange={(event) => setName(event.target.value)}
+        />
 
         <label>Quantity</label>
         <input
           type="text"
           value={quantity}
           onChange={(event) => setQuantity(event.target.value)}
-        ></input>
+        />
 
         <label>Location</label>
         <select
@@ -52,7 +59,7 @@ export default function AddItemButton() {
           type="date"
           value={date}
           onChange={(event) => setDate(event.target.value)}
-        ></input>
+        />
 
         <button className="myButton" type="submit" onClick={submitForm}>
           Submit
