@@ -21,11 +21,36 @@
 h1,
 h2 {
     text-transform: capitalize;
-    font-size: 1.6875rem;
-    line-height: 4.25rem;
-    margin-bottom: 1.5rem;
+    font-size: 1.8rem;
+    line-height: 2.25rem;
+    /* margin-bottom: 1rem; */
     font-family: "Antic Didone", "system-ui", "Segoe UI", "Roboto", "Helvetica", "Arial", sans-serif;
-    opacity: 0.9;
+    opacity: 0.8;
+}
+
+h3 {
+    text-transform: capitalize;
+    font-size: 1.475rem;
+    line-height: 1.25rem;
+    font-family: "Antic Didone", "system-ui", "Segoe UI", "Roboto", "Helvetica", "Arial", sans-serif;
+    opacity: 0.6;
+}
+
+h4 {
+    text-transform: capitalize;
+    font-size: 1.47rem;
+    line-height: 1.25rem;
+    font-family: "Antic Didone", "system-ui", "Segoe UI", "Roboto", "Helvetica", "Arial", sans-serif;
+    opacity: 0.6;
+}
+
+p {
+    text-transform: capitalize;
+    font-size: 1.2rem;
+    line-height: 1.25rem;
+    /* margin-bottom: 1.5rem; */
+    font-family: "Antic Didone", "system-ui", "Segoe UI", "Roboto", "Helvetica", "Arial", sans-serif;
+    opacity: 0.6;
 }
 
 li {
