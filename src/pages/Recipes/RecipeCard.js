@@ -7,10 +7,10 @@ export default function RecipeCard(props) {
   return (
     <div className="card">
       <div className="img-div">
-        <img alt={`image of ${recipe.title}`} src={recipe.thumbnail} />
+        <img alt={`${recipe.title}`} src={recipe.thumbnail} />
       </div>
       <p>{recipe.title}</p>
-      <a target="_blank" className="myButton" href={recipe.href}>
+      <a className="myButton" href={recipe.href}>
         View Recipe
       </a>
     </div>

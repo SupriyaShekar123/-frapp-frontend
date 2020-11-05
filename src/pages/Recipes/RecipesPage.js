@@ -8,11 +8,8 @@ export default function RecipesPage() {
   const [recipes, setRecipes] = useState([]);
   const items = useSelector(selectItems);
 
-  const unusedItems = items.filter((item) => {
-    if (item.used === false && item.wasted === false) {
-      return item;
-    }
-  });
+  const unusedItems = items.filter((item) => item.used === false && item.wasted === false);
+
   const itemsByDate = unusedItems.sort(
     (itemA, itemB) =>
       new Date(itemA.expirationDate) - new Date(itemB.expirationDate)
@@ -20,24 +17,19 @@ export default function RecipesPage() {
 
   const ingredient = itemsByDate[0] ? itemsByDate[0].name : null;
 
-  console.log({ ingredient });
-
   const recipesURL = `https://cors-anywhere.herokuapp.com/http://www.recipepuppy.com/api/?i=${ingredient},`;
 
-  const getRecipes = async () => {
-    try {
-      const response = await Axios.get(recipesURL);
-      setRecipes(response.data);
-    } catch (error) {
-      console.log(error);
-    }
-  };
-
-  recipes ? console.log("recipes:", recipes) : console.log("finding recipes");
-
   useEffect(() => {
-    getRecipes();
-  }, [ingredient]);
+    async function getRecipes() {
+      try {
+        const response = await Axios.get(recipesURL);
+        setRecipes(response.data);
+      } catch (error) {
+        console.log(error);
+      }
+    }
+    getRecipes()
+  }, [ingredient, recipesURL]);
 
   return (
     <div>
@@ -62,7 +54,6 @@ export default function RecipesPage() {
             })
           : "Loading..."}
       </div>
-      {/* <hr /> */}
     </div>
   );
 }

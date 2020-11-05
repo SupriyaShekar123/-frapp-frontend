@@ -13,11 +13,11 @@ export default function Navbar() {
 
   useEffect(() => {
       dispatch(getUserWithStoredToken());
-  }, [token]);
+  }, [dispatch, token]);
 
   useEffect(() => {
       dispatch(fetchItems());
-  }, [id]);
+  }, [dispatch, id]);
 
   return (
     <nav>
