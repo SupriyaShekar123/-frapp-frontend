@@ -34,6 +34,7 @@ export default function Navbar() {
         ) : (
           <>
             <NavLink to="/WhatDoIHave">What do I Have ?</NavLink>
+            <NavLink to="/RecipeSuggestions">Recipe Suggestions</NavLink>
             <NavLink to="/MyWaste" className="button">
               My waste
             </NavLink>
