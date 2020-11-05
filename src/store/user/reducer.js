@@ -1,25 +1,27 @@
-import { LOG_OUT, LOGIN_SUCCESS, TOKEN_STILL_VALID } from './actions'
+import { LOG_OUT, LOGIN_SUCCESS, TOKEN_STILL_VALID } from "./actions";
 
 const initialState = {
   token: null,
-	name: null,
-	email: null,
-}
+  name: null,
+  email: null,
+};
 
-export default (state = initialState, action) => {
-	switch (action.type) {
-		case LOGIN_SUCCESS:
-			localStorage.setItem("token", action.payload.token);
-			return { ...state, ...action.payload };
+const reducer = (state = initialState, action) => {
+  switch (action.type) {
+    case LOGIN_SUCCESS:
+      localStorage.setItem("token", action.payload.token);
+      return { ...state, ...action.payload };
 
-		case LOG_OUT:
+    case LOG_OUT:
       localStorage.removeItem("token");
       return { ...initialState, token: null };
 
-		case TOKEN_STILL_VALID:
-			return { ...state, ...action.payload }
+    case TOKEN_STILL_VALID:
+      return { ...state, ...action.payload };
 
-		default:
-			return state
-	}
-}
+    default:
+      return state;
+  }
+};
+
+export default reducer;
