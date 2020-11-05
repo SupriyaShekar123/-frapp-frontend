@@ -1,5 +1,5 @@
-img {
-    height: 400px;
+.Home_img {
+    height: 300px;
     width: 300px;
 }
 
@@ -18,7 +18,7 @@ img {
 }
 
 .first_slide {
-    padding: 100px;
+    padding: 150px;
 }
 
 .link {
