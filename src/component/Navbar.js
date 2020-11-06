@@ -33,6 +33,7 @@ export default function Navbar() {
           </>
         ) : (
           <>
+            <NavLink to="/">Home</NavLink>
             <NavLink to="/WhatDoIHave">What do I Have ?</NavLink>
             <NavLink to="/RecipeSuggestions">Recipe Suggestions</NavLink>
             <NavLink to="/MyWaste" className="button">
